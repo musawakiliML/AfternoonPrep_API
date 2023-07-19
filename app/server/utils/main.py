@@ -9,7 +9,6 @@ import ocr_generation
 import data_extraction
 
 
-
 def main():
     s3_prefix = 'WASSCE_JUNE/Physics_November_WASSCE/Physics_November_WASSCE_2011/'
     print("Detecting text from OCR..")

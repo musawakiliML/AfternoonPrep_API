@@ -9,10 +9,14 @@ OCR collection from Amazon textract and sent to S3
 #!/bin/python3
 
 import re
+import os
 import json
 import boto3
 import urllib
 from botocore.exceptions import ClientError
+from dotenv import load_dotenv
+
+load_dotenv()  # take environment variables from .env.
 
 # Removes strange characters returned from OCR output, these characters are not suitable for proper regex search in... 
 #...future regex functions
@@ -49,8 +53,8 @@ def check_choice_regex(line):
         
 
 def detect_raw_text(s3_prefix):
-    access_key = 'AKIAY2FJQ56HPBP46YWJ'   #insert AWS Access key
-    secret_access_key = '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'   #insert AWS secret access key
+    access_key = os.environ["AWS_ACCESS_KEY"]   #insert AWS Access key
+    secret_access_key = os.environ["AWS_SECRET_KEY"]   #insert AWS secret access key
     region = 'us-east-1'
     
     question_number_regex = re.compile(r'^\d{1,2}')
@@ -103,10 +107,13 @@ def detect_raw_text(s3_prefix):
         s3Keys.append(obj['Key'])
     s3Keys.sort(key=natural_keys)   
     print(s3Keys)
+
+
     num_index = 1
     file_name = str("./raw_outputs/" + exam_type + "_" + exam_sub_type + "_" + exam_year + "_" + exam_subject)
     file = open(file_name, "w+")
     valid_options = 0  #Helps to skip the options that appear before the test begins
+    
     for s3Key in s3Keys[1:]:               
         document_block = textract_client.detect_document_text(
         Document={
