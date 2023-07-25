@@ -1,12 +1,26 @@
 from fastapi import APIRouter, UploadFile, File, HTTPException
 from fastapi.responses import JSONResponse
+from typing import List
+from datetime import datetime
+import os, json
+
+from app.server.database.db_connection import question_collections
+
+from app.server.database.crud import (
+    add_questions_content,
+    retrieve_question_content,
+    retrieve_question_contents
+)
+
+from app.server.models.questions import QuestionsSchema
+
 from app.server.utils import ocr_generation
 from app.server.utils import data_extraction
-import os, json
+
 
 router = APIRouter()
 
-@router.post("/process_document/")
+@router.post("/")
 async def process_document(document: UploadFile = File(...)):
     # Step 1: Save the uploaded document locally
     with open(f"temp_{document.filename}", "wb") as temp_file:

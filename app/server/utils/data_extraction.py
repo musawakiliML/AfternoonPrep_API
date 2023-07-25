@@ -45,9 +45,7 @@ def check_sub_type(month):
 def extract_data(file_path):
     
     question_regex = re.compile(r"##((\d{1,2}).*)(@@A.*)(@@B.*)(@@C.*)(@@D.*)")
-#TODO: Explain the grouping done with the regex above
-                        
-    
+    #TODO: Explain the grouping done with the regex above
                                 
     # Defining core variables 
     entire_list = []

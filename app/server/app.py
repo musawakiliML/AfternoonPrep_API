@@ -2,7 +2,7 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 
 # Question Routes
-from app.server.api.v1.endpoints import router as ProcessDocument
+from app.server.api.v1.endpoints.process_document import router as ProcessDocument
 
 
 app = FastAPI()
