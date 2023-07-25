@@ -100,16 +100,22 @@ def extract_data(file_path):
         #print(entire_dict) 
         
         #Return output file as JSON
-        output_file_name = file_base_path + "/output_" + file_name + ".json"
-    with open(output_file_name, 'w') as json_file:
-        json.dump(entire_list, json_file, indent=2)
+
+    #     output_file_name = file_base_path + "/output_" + file_name + ".json"
+    # with open(output_file_name, 'w') as json_file:
+    #     json.dump(entire_list, json_file, indent=2)
+
+    return entire_list
+
+
         
         
-def main():
-    file_path = "./raw_outputs/WASSCE_June_2011_Economics"
-    extract_data(file_path)
+# def main():
+#     file_path = "app/server/utils/raw_outputs/WASSCE_November_2011_Physics"
+#     extract_data(file_path)
     
 
 #Main execution
-if __name__ == "__main__":
-    main()
+
+# if __name__ == "__main__":
+#     main()
