@@ -180,10 +180,10 @@ def detect_raw_text(s3_prefix):
     return str(file_name)   
          
             
-# def main():
-#     s3_prefix = 'WASSCE_JUNE/Physics_November_WASSCE/Physics_November_WASSCE_2011/'
-#     detect_raw_text(s3_prefix)
+def main():
+    s3_prefix = 'WASSCE_JUNE/Physics_November_WASSCE/Physics_November_WASSCE_2011/'
+    detect_raw_text(s3_prefix)
 
-# #Main execution
-# if __name__ == "__main__":
-#     main()
+#Main execution
+if __name__ == "__main__":
+    main()

@@ -105,10 +105,7 @@ def extract_data(file_path):
     # with open(output_file_name, 'w') as json_file:
     #     json.dump(entire_list, json_file, indent=2)
 
-    return entire_list
-
-
-        
+    return entire_list  
         
 # def main():
 #     file_path = "app/server/utils/raw_outputs/WASSCE_November_2011_Physics"

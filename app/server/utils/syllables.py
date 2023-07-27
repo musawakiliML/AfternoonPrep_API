@@ -241,8 +241,6 @@ exam = "JAMB"
 tagMultiQuestions(1980, 2018)
 # print(getQuestion())
 
-
-
 # for question in questions:
 #     match = matchQuestionToSyllables(question, topics)
 #     predicted_difficulty = predict_difficulty(question)
