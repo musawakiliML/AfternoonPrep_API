@@ -3,6 +3,7 @@ from fastapi.middleware.cors import CORSMiddleware
 
 # Question Routes
 from app.server.api.v1.endpoints.process_document import router as ProcessDocument
+from app.server.api.v1.endpoints.process_pdf import router as ProcessPDF
 
 
 app = FastAPI()
@@ -15,7 +16,10 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-app.include_router(ProcessDocument, tags=["Processing Document"], prefix="/process_document")
+app.include_router(ProcessDocument, tags=["Processing Document"],
+                   prefix="/process_document")
+app.include_router(ProcessPDF, tags=["Processing PDF to Images"],
+                   prefix="/convert_pdf_to_images")
 
 @app.get('/', tags=["Root"])
 async def start_root() -> dict:
