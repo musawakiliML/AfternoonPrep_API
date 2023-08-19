@@ -18,7 +18,7 @@ except Exception as e:
     print("Unable to connect to the MongoDB server.")
     print(str(e))
 
-database = client.AfternoonPrep
+database = client.afternoon_prep
 
 #===================  Database Collections ================
-question_collections = database.get_collection("question_bank")
+question_collections = database.get_collection("questions")
