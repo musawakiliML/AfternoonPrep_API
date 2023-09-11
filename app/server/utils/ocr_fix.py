@@ -5,7 +5,7 @@ text = """Which of the following diagrams correctly illustrates the passage of w
 """
 
 # Define a regex pattern to match question numbers and text
-pattern = r'(\d+\..+?)(?=(?:\d+\.\s+\.|$)|$)'
+pattern = r'(\d\d+\..+?)(?=(?:\d+\.\s+\.|$)|$)'
 
 # Use re.split to split the text into individual questions
 question_texts = re.split(pattern, text)[1:]

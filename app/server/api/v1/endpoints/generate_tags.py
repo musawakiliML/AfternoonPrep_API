@@ -32,11 +32,11 @@ def generate_tags(question):
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.post("/")
-async def generate_tags_for_questions(questions):
+async def generate_tags_for_questions():
     try:
         # Load the existing JSON file
-        with open("questions.json", "r") as json_file:
-            data = json.load(json_file)
+        with open("app\server\utils\raw_outputs\output_WASSCE_November_2011_Physics.json", "r") as json_file:
+            questions = json.load(json_file)
         
         # Generate tags for each question and update the JSON
         for question_data in questions:
@@ -48,7 +48,7 @@ async def generate_tags_for_questions(questions):
 
         # Write the updated JSON back to the file
         with open("questions.json", "w") as json_file:
-            json.dump(data, json_file, indent=4)
+            json.dump(questions, json_file, indent=4)
 
         return {"message": "Tags generated and updated successfully!"}
     
