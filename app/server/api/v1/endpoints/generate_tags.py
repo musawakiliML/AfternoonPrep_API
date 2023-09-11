@@ -32,7 +32,7 @@ def generate_tags(question):
         raise HTTPException(status_code=500, detail=str(e))
 
 @router.post("/")
-async def generate_tags_for_questions(questions: list[dict]):
+async def generate_tags_for_questions(questions):
     try:
         # Load the existing JSON file
         with open("questions.json", "r") as json_file:
