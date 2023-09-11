@@ -52,6 +52,7 @@ def extract_data(file_path):
     question_dict = {}
     choice_dict = {}
     question_id = 0
+    in_question_25 = False
     
     file_name = os.path.basename(file_path).split('.')[0]
     exam_type = file_name.split('_')[0]
@@ -70,30 +71,61 @@ def extract_data(file_path):
         
         for line in read_data:
             #print(line)
-            for question in re.finditer(question_regex, line):
-                question_dict = {}
-                question_dict['imageUrl'] = ""
-                question_dict['sectionId'] = ""
-                question_num = question.group(2)
-                #entire_dict.update({ question_num : {} })
-                question_dict['year'] = int(exam_year)
-                question_dict['type'] = exam_type.upper()
-                question_dict['subType'] = check_sub_type(exam_sub_type)
-                question_dict['subject'] = exam_subject.upper()
-                question_dict['text'] = clean_text(question.group(1)[question.group(1).find(".")+1:].strip())
-                question_dict['number'] = int(question_num)
-                question_dict['correctOption'] = "A"
-                question_dict['options'] = {}
-                for option_index in range(3,7):
-                    choice_key = question.group(option_index)[2]
-                    choice_value = clean_text(question.group(option_index)[3:].strip('.').strip().split('.')[0])
-                    question_dict['options'].update({choice_key: choice_value})
-                entire_list.append(question_dict)
-                #print(question.group(0) + "\n")
-                count = count + 1
+            try:
+                for question in re.finditer(question_regex, line):
+                    if line.startswith(".."):
+                        in_question_25 = False
+                        question_dict = {
+                            'imageUrl': "",
+                            'sectionId': "",
+                            'year': int(exam_year),
+                            'type': exam_type.upper(),
+                            'subType': check_sub_type(exam_sub_type),
+                            'subject': exam_subject.upper(),
+                            'text': "",
+                            'number': 25,
+                            'correctOption': "A",
+                            'options': {}
+                        }
+                    elif in_question_25:
+                        # Use regular expressions to extract options and correct option
+                        option_match = re.match(r'^([A-D])\. (.+)$', line.strip())
+                        print(option_match)
+                        if option_match:
+                            choice_key = option_match.group(1)
+                            choice_value = clean_text(option_match.group(2))
+                            question_dict['options'][choice_key] = choice_value
+                        else:
+                            question_dict['text'] += clean_text(line)  # Append lines to question text
+                            if re.match(r'^\d+$', line.strip()):
+                                # If we encounter a new question number, add the previous question to the list
+                                if question_dict:
+                                    entire_list.append(question_dict)
+                                    question_dict = {}  # Reset the question_dict
+                    else:
+                        question_dict = {}
+                        question_dict['imageUrl'] = ""
+                        question_dict['sectionId'] = ""
+                        question_num = question.group(2)
+                        #entire_dict.update({ question_num : {} })
+                        question_dict['year'] = int(exam_year)
+                        question_dict['type'] = exam_type.upper()
+                        question_dict['subType'] = check_sub_type(exam_sub_type)
+                        question_dict['subject'] = exam_subject.upper()
+                        question_dict['text'] = clean_text(question.group(1)[question.group(1).find(".")+1:].strip())
+                        question_dict['number'] = int(question_num)
+                        question_dict['correctOption'] = "A"
+                        question_dict['options'] = {}
+                        for option_index in range(3,7):
+                            choice_key = question.group(option_index)[2]
+                            choice_value = clean_text(question.group(option_index)[3:].strip('.').strip().split('.')[0])
+                            question_dict['options'].update({choice_key: choice_value})
+                        entire_list.append(question_dict)
+                    #print(question.group(0) + "\n")
+                    count = count + 1
+            except Exception as e:
+                print(f"Error processing question {count + 1}: {e}")
 
-
-            
         #print(re.findall(question_regex, read_data))
         print(count)
         #print(read_data)
@@ -101,18 +133,18 @@ def extract_data(file_path):
         
         #Return output file as JSON
 
-    #     output_file_name = file_base_path + "/output_" + file_name + ".json"
-    # with open(output_file_name, 'w') as json_file:
-    #     json.dump(entire_list, json_file, indent=2)
+        output_file_name = file_base_path + "/output_" + file_name + ".json"
+    with open(output_file_name, 'w') as json_file:
+        json.dump(entire_list, json_file, indent=2)
 
     return entire_list  
         
-# def main():
-#     file_path = "app/server/utils/raw_outputs/WASSCE_November_2011_Physics"
-#     extract_data(file_path)
+def main():
+    file_path = "/Users/musaml/Documents/GitHub/AfternoonPrep_API/app/server/utils/raw_outputs/WASSCE_November_2011_Physics"
+    extract_data(file_path)
     
 
-#Main execution
+# Main execution
 
-# if __name__ == "__main__":
-#     main()
+if __name__ == "__main__":
+    main()

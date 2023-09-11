@@ -1,4 +1,5 @@
-from fastapi import FastAPI, UploadFile, File, HTTPException, APIRouter
+from fastapi import UploadFile, File, HTTPException, APIRouter, status
+from fastapi.responses import JSONResponse
 from PyPDF2 import PdfFileReader
 from pdf2image import convert_from_bytes
 import boto3
@@ -29,6 +30,7 @@ async def convert_pdf_to_images(pdf_file: UploadFile = File(...)):
             s3_key = os.path.join(s3_prefix, image_filename)
             s3_client.upload_fileobj(BytesIO(image_bytes), os.environ["S3_BUCKET_NAME"], s3_key)
 
-        return {"message": "PDF pages converted and uploaded to S3"}
+        message = {"message": "PDF pages converted and uploaded to S3"}
+        return JSONResponse(content=message, status_code=status.HTTP_200_OK)
     except Exception as e:
         raise HTTPException(status_code=500, detail="Error processing PDF and uploading images")

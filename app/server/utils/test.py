@@ -8,7 +8,10 @@ openai.api_key = os.environ["OPENAI_API_KEY"]
 syllabus_storage = []
 def gen_syllabusBySubject(subject):
     # deefine prompt
-    prompt = (f"Generate a Nigerian senior secondary school  syllabus for {subject}.\n")
+    prompt = (f"Generate tagging for this question: “The earliest form of agriculture started with” based on the format using Waec Standard.
+Difficulty Level:
+Grade Level:
+Topics: {subject}.\n")
             #   "Topic:   \n"
             #   "Subtopic:")
     
