@@ -16,6 +16,7 @@ def extract_tags_info(generated_tags):
     grade_level = ""
     topics = ""
     tags = ""
+    explanations = ""
 
     # Split the generated tags into lines and iterate through them
     for line in generated_tags:
@@ -29,6 +30,8 @@ def extract_tags_info(generated_tags):
             topics = line.replace("Topics:", "").strip()
         elif line.startswith("Tags:"):
             tags = line.replace("Tags:", "").strip()
+        elif line.startswith("Explanations:"):
+            tags = line.replace("Explanations:", "").strip()
 
     # Return the extracted information as a dictionary
 
@@ -36,7 +39,8 @@ def extract_tags_info(generated_tags):
         "Difficulty Level": difficulty_level,
         "Grade Level": grade_level,
         "Topics": topics,
-        "Tags": tags
+        "Tags": tags,
+        "Explanations": explanations
     }
 
 def generate_tags(question):
@@ -49,7 +53,7 @@ def generate_tags(question):
         # Use OpenAI's GPT-3 to generate tags
         response = openai.Completion.create(
             engine="text-davinci-003",
-            prompt=f"Generate tagging for this Question:'{question}'.\nStrictly based on Waec Standard.\nJust respond with only the following format below: \n\nDifficulty Level:\n\nGrade Level:\n\nTopics: \n\nTags:",
+            prompt=f"Generate tagging for this Question:'{question}'.\nStrictly based on Waec Standard.\nJust respond with only the following format below: \n\nDifficulty Level:\n\nGrade Level:\n\nTopics: \n\nTags:\n\nExplanations:",
             max_tokens=2000,
             temperature=1,
             top_p=1,
@@ -92,6 +96,7 @@ def generate_tags_for_questions(questions):
             question_data["grade_level"] = tags.get("Grade Level", "")
             question_data["topics"] = tags.get("Topics", "")
             question_data["tags"] = tags.get("Tags", "")
+            question_data["explanations"] = tags.get("Tags", "")
 
         # Write the updated JSON back to the file
         # with open("questions.json", "w") as json_file:
