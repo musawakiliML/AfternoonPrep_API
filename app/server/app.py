@@ -4,7 +4,6 @@ from fastapi.middleware.cors import CORSMiddleware
 # Question Routes
 from app.server.api.v1.endpoints.process_document import router as ProcessDocument
 from app.server.api.v1.endpoints.process_pdf import router as ProcessPDF
-from app.server.api.v1.endpoints.generate_tags import router as GenerateTags
 
 
 app = FastAPI()
@@ -21,7 +20,6 @@ app.include_router(ProcessDocument, tags=["Processing Document"],
                    prefix="/process_document")
 app.include_router(ProcessPDF, tags=["Processing PDF to Images"],
                    prefix="/convert_pdf_to_images")
-app.include_router(GenerateTags, tags=["Generate Question Tags"], prefix="/generate_tags")
 
 @app.get('/', tags=["Root"])
 async def start_root() -> dict:

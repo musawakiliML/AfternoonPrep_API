@@ -1,0 +1,1022 @@
+[
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The branch of Biology that deals with the principles of classification of organisms is known as",
+    "number": 1,
+    "correctOption": "A",
+    "options": {
+      "A": "biological index",
+      "B": "nomenclature",
+      "C": "taxonomy",
+      "D": "ecology"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following structures is a tissue?",
+    "number": 2,
+    "correctOption": "A",
+    "options": {
+      "A": "Vessel element",
+      "B": "Blood",
+      "C": "Sieve tube element",
+      "D": "Erythrocyte"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following cells are not regarded as specialized?",
+    "number": 3,
+    "correctOption": "A",
+    "options": {
+      "A": "Sperm cells",
+      "B": "Root tip cells",
+      "C": "Muscle cells",
+      "D": "Somatic cells 2018 3"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following pairs of cells carry out the same function?",
+    "number": 4,
+    "correctOption": "A",
+    "options": {
+      "A": "Cheek cell and red blood cell",
+      "B": "Spermatozoan and ovum",
+      "C": "Palisade cell and epidermal cell",
+      "D": "Root tip cell and guard cell"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "If Amoeba is placed in a salt solution, the contractile vacuoles would",
+    "number": 5,
+    "correctOption": "A",
+    "options": {
+      "A": "be bursting more frequently",
+      "B": "be more numerous",
+      "C": "be formed less frequently",
+      "D": "grow bigger before they burst"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "In which of the following habitats is Paramecium not found?",
+    "number": 6,
+    "correctOption": "A",
+    "options": {
+      "A": "Pond",
+      "B": "Aquarium",
+      "C": "Lake",
+      "D": "Puddle"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The following processes are involved in water movement in the endodermis except",
+    "number": 7,
+    "correctOption": "A",
+    "options": {
+      "A": "osmosis",
+      "B": "vacuolar pathway",
+      "C": "diffusion",
+      "D": "active transport"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Cells that utilise a lot of energy are characterized by the presence of a large number of",
+    "number": 8,
+    "correctOption": "A",
+    "options": {
+      "A": "vacuoles",
+      "B": "mitochondria",
+      "C": "endoplasmic reticulum",
+      "D": "ribosomes"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The part labelled II in the diagram is the",
+    "number": 9,
+    "correctOption": "A",
+    "options": {
+      "A": "centriole",
+      "B": "chloroplast",
+      "C": "chromatid",
+      "D": "tonoplast"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The part labelled I is called the",
+    "number": 10,
+    "correctOption": "A",
+    "options": {
+      "A": "nucleolus",
+      "B": "centromere",
+      "C": "centriole",
+      "D": "spindle"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Secondary growth is brought about by the activities of the",
+    "number": 11,
+    "correctOption": "A",
+    "options": {
+      "A": "phellogen and phelloderm",
+      "B": "phellogen and procambium",
+      "C": "vascular cambium and phelloderm",
+      "D": "vascular cambium and phellogen"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "A monocot root is different from a dicot root by having",
+    "number": 12,
+    "correctOption": "A",
+    "options": {
+      "A": "endodermis",
+      "B": "cambium",
+      "C": "wide pith",
+      "D": "root hair"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following statements best describes haemoglobin? It is",
+    "number": 13,
+    "correctOption": "A",
+    "options": {
+      "A": "yellowish in colour",
+      "B": "a red blood cell",
+      "C": "an oxygen carrying pigment",
+      "D": "needed for blood clotting"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Inhaled air is made warm and moist in the",
+    "number": 14,
+    "correctOption": "A",
+    "options": {
+      "A": "epiglottis",
+      "B": "nasal cavity",
+      "C": "trachea",
+      "D": "mouth"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following structures is not involved in respiration?",
+    "number": 15,
+    "correctOption": "A",
+    "options": {
+      "A": "Lung books",
+      "B": "Mouth",
+      "C": "Stomach",
+      "D": "Trachea"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Filtrate in the Bowman's capsule contains vitamins because",
+    "number": 16,
+    "correctOption": "A",
+    "options": {
+      "A": "only a little amount is required by the body",
+      "B": "they can be reabsorbed into the blood",
+      "C": "they have low molecular weight",
+      "D": "most of them are fat soluble"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "More sweat is produced during muscular exercise because",
+    "number": 17,
+    "correctOption": "A",
+    "options": {
+      "A": "the contracting muscles produce water",
+      "B": "fermentation occurs in muscles",
+      "C": "the temperature of the body rises",
+      "D": "the muscle fatigues"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following neurons may not have myelin sheath?",
+    "number": 18,
+    "correctOption": "A",
+    "options": {
+      "A": "Effector cells",
+      "B": "Intermediate neurons",
+      "C": "Motor neurons",
+      "D": "Sensory neurons 2018 6"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following is an effector organ?",
+    "number": 19,
+    "correctOption": "A",
+    "options": {
+      "A": "Tongue",
+      "B": "Skin",
+      "C": "Nose bridge",
+      "D": "Ear glands"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "During sexual reproduction in Paramecium, how many times does the zygote divide to produce eight nuclei?",
+    "number": 20,
+    "correctOption": "A",
+    "options": {
+      "A": "1",
+      "B": "2",
+      "C": "3",
+      "D": "4"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The testes in male mammals descend into the scrotal sac because",
+    "number": 21,
+    "correctOption": "A",
+    "options": {
+      "A": "there is congestion in the lower abdomen",
+      "B": "they run the risk of being destroyed",
+      "C": "they need special support",
+      "D": "they require a relatively low temperature"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Some animals return to water bodies to reproduce because",
+    "number": 22,
+    "correctOption": "A",
+    "options": {
+      "A": "natural enemies destroy their eggs on land",
+      "B": "water nourishes their embryos and their young ones,",
+      "C": "they are close to their ancestors and imitate them",
+      "D": "the temperature on land is not suitable for the development of their embryos"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following methods is appropriate for the cultivation of cassava?",
+    "number": 23,
+    "correctOption": "A",
+    "options": {
+      "A": "Budding",
+      "B": "Fragmentation",
+      "C": "Root cutting",
+      "D": "Stem cutting"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "What will be the chromosome number of the hybrid of two varieties of a plant with 36 chromosomes in the endosperm cell?",
+    "number": 24,
+    "correctOption": "A",
+    "options": {
+      "A": "12",
+      "B": "24",
+      "C": "36",
+      "D": "48 2018 7"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Kreb's cycle occurs in the",
+    "number": 25,
+    "correctOption": "A",
+    "options": {
+      "A": "mitochondria",
+      "B": "cytoplasm",
+      "C": "nucleus",
+      "D": "ribosomes"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The process whereby electrons are emitted from chlorophyll and returned to it unchanged is known as",
+    "number": 26,
+    "correctOption": "A",
+    "options": {
+      "A": "non-cyclic phosphorylation",
+      "B": "photochemical reaction",
+      "C": "photophorylation",
+      "D": "cyclic photophorylation"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following statements about photosynthesis is not true?",
+    "number": 27,
+    "correctOption": "A",
+    "options": {
+      "A": "Plants can photosynthesize without an increase in dry weight",
+      "B": "Carbon dioxide is absorbed by the leaves in bright light",
+      "C": "Oxygen is produced during photosynthesis from the breakdown of water",
+      "D": "Photosynthesis occurs in green plants"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The equation below represents the process of glycolysis heterokinase Glucose + ATP X + ADP X in the equation represents",
+    "number": 28,
+    "correctOption": "A",
+    "options": {
+      "A": "glucose diphosphate",
+      "B": "glucose phosphate",
+      "C": "glucose triphosphate",
+      "D": "fructose phosphate"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The removal of all the phloem tissues of the stem of a plant close to the root system for a long period of time is likely to",
+    "number": 29,
+    "correctOption": "A",
+    "options": {
+      "A": "provide more energy to the roots",
+      "B": "accumulate more starch in the roots",
+      "C": "cause the underground roots to develop buds",
+      "D": "cause the plant to wither and die"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The conversion of glucose to starch in the leaf during the day principally",
+    "number": 30,
+    "correctOption": "A",
+    "options": {
+      "A": "enables photosynthesis",
+      "B": "prevents osmotic problems",
+      "C": "enables the leaf to store the starch",
+      "D": "enables glucose to be used up"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following groups of substances are not six-carbon compounds?",
+    "number": 31,
+    "correctOption": "A",
+    "options": {
+      "A": "Glucose and lactose",
+      "B": "Lactose and cellulose",
+      "C": "Glucose, Lactose and Pyruvate",
+      "D": "Pyruvate and cellulose"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "A purple colour was obtained when sodium hydroxide solution and a drop of copper sulphate solution were added to a food substance. The food substance is likely to be a",
+    "number": 32,
+    "correctOption": "A",
+    "options": {
+      "A": "carbohydrate",
+      "B": "fat",
+      "C": "protein",
+      "D": "sugar"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following enzymes is active in the duodenum?",
+    "number": 33,
+    "correctOption": "A",
+    "options": {
+      "A": "Pepsin",
+      "B": "Renin",
+      "C": "Trypsin",
+      "D": "Amylase"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The following organisms are producers except",
+    "number": 34,
+    "correctOption": "A",
+    "options": {
+      "A": "Hibiscus",
+      "B": "Mushroom",
+      "C": "Cactus",
+      "D": "Spirogyra"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following structures produces the greatest variety of digestive enzymes?",
+    "number": 35,
+    "correctOption": "A",
+    "options": {
+      "A": "Salivary glands",
+      "B": "Pancreas",
+      "C": "Stomach",
+      "D": "Colon 2018 9"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The following are abiotic components of an ecosystem except",
+    "number": 36,
+    "correctOption": "A",
+    "options": {
+      "A": "temperature",
+      "B": "oxygen",
+      "C": "bacteria",
+      "D": "soil"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The total number of organisms therefore is",
+    "number": 37,
+    "correctOption": "A",
+    "options": {
+      "A": "200",
+      "B": "360",
+      "C": "600",
+      "D": "800"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Ecological investigation in a habitat includes the following procedures except",
+    "number": 38,
+    "correctOption": "A",
+    "options": {
+      "A": "choosing a habitat",
+      "B": "identification of specimens",
+      "C": "determining the genetic make-up of specimens",
+      "D": "measuring abiotic and biotic factors"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following substances when lost from the body of a mammal will not be returned to the ecosystem?",
+    "number": 39,
+    "correctOption": "A",
+    "options": {
+      "A": "Sweat",
+      "B": "Urea",
+      "C": "Heat energy",
+      "D": "Carbon dioxide"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The rate of decomposition of organisms is faster in the tropical rain forest than in other biomes because",
+    "number": 40,
+    "correctOption": "A",
+    "options": {
+      "A": "of the relatively constant daylight",
+      "B": "there are more plants per square feet",
+      "C": "of abundance of water",
+      "D": "of constant cool temperature"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Axerophyte conserves water by possession of the following features except",
+    "number": 41,
+    "correctOption": "A",
+    "options": {
+      "A": "thick cuticle",
+      "B": "sunken stomata",
+      "C": "broad leaves",
+      "D": "fleshy stem"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "The falling off of leaves of deciduous trees is helpful to the plant because it",
+    "number": 42,
+    "correctOption": "A",
+    "options": {
+      "A": "reduces the rate of transpiration",
+      "B": "enables the plant to conveniently eliminate its excretory products",
+      "C": "enables the plant to bear more fruits",
+      "D": "ensures that the limited mineral salts get to only growing regions"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "A sample of wet garden soil of known weight was heated to constant weight. The loss of weight is due to loss of",
+    "number": 43,
+    "correctOption": "A",
+    "options": {
+      "A": "water",
+      "B": "organic matter",
+      "C": "water and organic matter",
+      "D": "water and inorganic matter"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Assuming that a period of stable population size is followed by a period when natality increases by ten (10) percent and immigration increases by twenty (20) percent of population size. The population size will",
+    "number": 44,
+    "correctOption": "A",
+    "options": {
+      "A": "be at equilibrium",
+      "B": "increase by forty (40) percent",
+      "C": "begin to increase",
+      "D": "begin to decrease"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following methods does not make water fit for drinking?",
+    "number": 45,
+    "correctOption": "A",
+    "options": {
+      "A": "Addition of chlorine",
+      "B": "Boiling",
+      "C": "Distillation",
+      "D": "Addition of alum"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Vaccination results in",
+    "number": 46,
+    "correctOption": "A",
+    "options": {
+      "A": "aiding red blood cells to carry more oxygen",
+      "B": "production of antibodies which destroy toxins of germs",
+      "C": "arresting excessive bleeding",
+      "D": "production of white blood cells which engulf and digest bacteria"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Leguminous crops are incorporated into crop rotation in order to",
+    "number": 47,
+    "correctOption": "A",
+    "options": {
+      "A": "improve aeration of the soil",
+      "B": "promote nitrogen fixation",
+      "C": "increase the rate of soil formation",
+      "D": "improve upon the water holding capacity of the soil"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following practices improves crop yield in a clayey soil? Addition of",
+    "number": 48,
+    "correctOption": "A",
+    "options": {
+      "A": "more water and humus",
+      "B": "lime and humus",
+      "C": "fertilizers",
+      "D": "weedicides and fertilizers"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following activities promotes forest conservation?",
+    "number": 49,
+    "correctOption": "A",
+    "options": {
+      "A": "Lumbering",
+      "B": "Use of firewood for cooking",
+      "C": "Afforestation",
+      "D": "Production of paper"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following statements is not true about continuous variation? It",
+    "number": 50,
+    "correctOption": "A",
+    "options": {
+      "A": "is usually controlled by several genes",
+      "B": "can be influenced by environmental factors",
+      "C": "follows a normal distribution curve",
+      "D": "is usually controlled by one or two pair(s) of genes"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Acquired characters are",
+    "number": 51,
+    "correctOption": "A",
+    "options": {
+      "A": "received from parents",
+      "B": "passed to offspring",
+      "C": "caused by the environment",
+      "D": "caused by mutation"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Differences in characteristics observed between individuals of the same species is known as",
+    "number": 52,
+    "correctOption": "A",
+    "options": {
+      "A": "trait",
+      "B": "phenotype",
+      "C": "mutation",
+      "D": "variation"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following statements best describes protein synthesis?",
+    "number": 53,
+    "correctOption": "A",
+    "options": {
+      "A": "DNA is directly involved in translation",
+      "B": "Translocation of the ribosomes exposes a new codon for base pairing with an amino acid",
+      "C": "Each tRNA with a particular anticodon always carries a different protein in the process",
+      "D": "One amino acid is always carried by more than one tRNA"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "If a person has two alleles of the sickle cell anacmia gene, the person",
+    "number": 54,
+    "correctOption": "A",
+    "options": {
+      "A": "is a heterozygous carrier of the disease",
+      "B": "is immune to the disease and cannot pass it on to an offspring",
+      "C": "has the disease",
+      "D": "is probably of Asian ancestry"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "What is the probability of a man of blood group AB married to a woman of blood group O producing a child of blood group O?",
+    "number": 55,
+    "correctOption": "A",
+    "options": {
+      "A": "0%",
+      "B": "25%",
+      "C": "50%",
+      "D": "75%"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "A man with blood group IAIA is married to a woman with blood group IAIO. The blood group of their son is likely to be",
+    "number": 56,
+    "correctOption": "A",
+    "options": {
+      "A": "A",
+      "B": "O",
+      "C": "B",
+      "D": "AB"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Natural selection is a consequence of",
+    "number": 57,
+    "correctOption": "A",
+    "options": {
+      "A": "distribution of organisms",
+      "B": "adverse conditions",
+      "C": "variation in organisms",
+      "D": "inbreeding"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Which of the following components of Larmark's theory of evolution is considered faulty?",
+    "number": 58,
+    "correctOption": "A",
+    "options": {
+      "A": "Individuals of the same species growing under different environmental conditions differ from each other",
+      "B": "Use of certain organs result in development of those parts",
+      "C": "Unused organs degenerate",
+      "D": "Changes that result in individuals of the same species are transmitted to offspring 2018 13"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "A vestigial structure in humans is",
+    "number": 59,
+    "correctOption": "A",
+    "options": {
+      "A": "earlobe",
+      "B": "toe bone",
+      "C": "tail bone",
+      "D": "spleen"
+    }
+  },
+  {
+    "imageUrl": "",
+    "sectionId": "",
+    "year": 2011,
+    "type": "WASSCE",
+    "subType": "MAY/JUNE",
+    "subject": "BIOLOGY",
+    "text": "Adenine pairs with thymine because",
+    "number": 60,
+    "correctOption": "A",
+    "options": {
+      "A": "the two occur in the same nucleic acid",
+      "B": "one is a strong base and the other a weak base",
+      "C": "two purine bases easily pair up",
+      "D": "one is a purine base and the other a pyrimidine"
+    }
+  }
+]

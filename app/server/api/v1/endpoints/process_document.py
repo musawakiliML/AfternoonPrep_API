@@ -4,6 +4,7 @@ from fastapi.encoders import jsonable_encoder
 from typing import List
 from datetime import datetime
 import os, json
+import openai
 
 from app.server.database.db_connection import question_collections
 
@@ -17,7 +18,12 @@ from app.server.models.questions import QuestionsSchema
 
 from app.server.utils.ocr_generation import detect_raw_text
 from app.server.utils.data_extraction import extract_data
+from app.server.utils.generate_tags import generate_tags_for_questions
 
+
+
+# Initialize your OpenAI GPT-3 API key
+openai.api_key = os.environ["OPENAI_API_KEY"]
 
 router = APIRouter()
 
@@ -35,7 +41,6 @@ async def process_document(exam_subject: str = Form(default="Physics"), exam_yea
     # Step 2: Perform OCR on the uploaded document
     try:
         ocr_output = detect_raw_text(s3_prefix)
-
     except Exception as e:
         raise HTTPException(status_code=500, detail="Error in OCR processing")
     
@@ -44,10 +49,20 @@ async def process_document(exam_subject: str = Form(default="Physics"), exam_yea
         data_output = extract_data(ocr_output)
     except Exception as e:
         raise HTTPException(status_code=500, detail="Error in data extraction")
-
+    
+    # Step 4: Add tags to each question like difficulty level, grade level etc..
+    try:
+        updated_questions = generate_tags_for_questions(data_output)
+        if updated_questions:
+            result = updated_questions['result']
+            response = updated_questions['message']
+            print(response)
+    except Exception as e:
+        raise HTTPException(status_code=500, detail="Error in Question Tagging")
+    
     # Step 4: Save the generated file to database.
     try:
-        data_output = jsonable_encoder(data_output)
+        data_output = jsonable_encoder(result)
         created_at = datetime.utcnow()
         schema = {
             "generated_questions":data_output,
@@ -96,7 +111,6 @@ async def get_question_data(id):
 
     try:
         question_data = await retrieve_question_content(id)
-        data_model = []
         if question_data:
             response_model = {
                     "id": question_data["id"],
