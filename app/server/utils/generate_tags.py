@@ -96,7 +96,7 @@ def generate_tags_for_questions(questions):
             question_data["grade_level"] = tags.get("Grade Level", "")
             question_data["topics"] = tags.get("Topics", "")
             question_data["tags"] = tags.get("Tags", "")
-            question_data["explanations"] = tags.get("Tags", "")
+            question_data["explanations"] = tags.get("Explanations", "")
 
         # Write the updated JSON back to the file
         # with open("questions.json", "w") as json_file:
