@@ -30,8 +30,8 @@ def extract_tags_info(generated_tags):
             topics = line.replace("Topics:", "").strip()
         elif line.startswith("Tags:"):
             tags = line.replace("Tags:", "").strip()
-        elif line.startswith("Explanations:"):
-            explanations = line.replace("Explanations:", "").strip()
+        elif line.startswith("Explain Question and Answer:"):
+            explanations = line.replace("Explain Question and Answer:", "").strip()
 
     # Return the extracted information as a dictionary
 
@@ -53,7 +53,7 @@ def generate_tags(question):
         # Use OpenAI's GPT-3 to generate tags
         response = openai.Completion.create(
             engine="text-davinci-003",
-            prompt=f"Generate tagging for this Question:'{question}'.\nStrictly based on Waec Standard.\nJust respond with only the following format below: \n\nDifficulty Level:\n\nGrade Level:\n\nTopics: \n\nTags:\n\nExplanations:",
+            prompt=f"Generate tagging for this Question:'{question}'.\nStrictly based on Waec Standard.\nJust respond with only the following format below: \n\nDifficulty Level:\n\nGrade Level:\n\nTopics: \n\nTags:\n\nExplain Question and Answer:",
             max_tokens=2000,
             temperature=1,
             top_p=1,
