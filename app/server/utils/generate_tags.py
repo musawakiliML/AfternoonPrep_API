@@ -31,7 +31,7 @@ def extract_tags_info(generated_tags):
         elif line.startswith("Tags:"):
             tags = line.replace("Tags:", "").strip()
         elif line.startswith("Explanations:"):
-            tags = line.replace("Explanations:", "").strip()
+            explanations = line.replace("Explanations:", "").strip()
 
     # Return the extracted information as a dictionary
 
