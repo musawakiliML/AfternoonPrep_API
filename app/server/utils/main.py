@@ -13,7 +13,7 @@ def main():
     s3_prefix = 'WASSCE_JUNE/Physics_November_WASSCE/Physics_November_WASSCE_2011/'
     print("Detecting text from OCR..")
     try: 
-        ocr_output = detect_raw_text(s3_prefix)
+        ocr_output = ocr_generation.detect_raw_text(s3_prefix)
     except:
         ocr_output = ''
         print("Error detecting text from OCR!")
@@ -22,7 +22,7 @@ def main():
     
     print(ocr_output)
     try: 
-        extract_data(ocr_output)
+        data_extraction.extract_data(ocr_output)
     except: 
         print("Error with text extraction")
     
