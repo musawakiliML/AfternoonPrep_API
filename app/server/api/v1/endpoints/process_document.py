@@ -83,11 +83,11 @@ async def process_document(exam_subject: str = Form(default="Physics"), exam_yea
 
 # GET all Questions Route
 
-@router.get("/", response_description="Get List of Questions", response_model=Page[QuestionsSchema])
-async def get_questions_data():
+@router.get("/{limit}", response_description="Get List of Questions", response_model=Page[QuestionsSchema])
+async def get_questions_data(limit):
 
     try:
-        all_questions_data = await retrieve_question_contents()
+        all_questions_data = await retrieve_question_contents(limit)
         data_model = []
         if all_questions_data:
             for data in all_questions_data:

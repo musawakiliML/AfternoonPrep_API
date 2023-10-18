@@ -8,10 +8,15 @@ from app.server.serializers.questions_serializer import questions_helper
 # ================= Questions ==================
 # Retrieve all Question entries
 
-async def retrieve_question_contents():
+async def retrieve_question_contents(limit: int):
     question_contents = []
+    count = 1
     async for content in question_collections.find():
         question_contents.append(questions_helper(content))
+        if count == limit:
+            break
+        else:
+            count += 1
     return question_contents
 
 # Retrieve a single entry with matching ID
