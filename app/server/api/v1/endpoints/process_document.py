@@ -1,5 +1,6 @@
 from fastapi import APIRouter,status, UploadFile, File, HTTPException, Form
 from fastapi.responses import JSONResponse
+from fastapi_pagination import Page, add_pagination, paginate
 from fastapi.encoders import jsonable_encoder
 from typing import List
 from datetime import datetime
@@ -82,11 +83,11 @@ async def process_document(exam_subject: str = Form(default="Physics"), exam_yea
 
 # GET all Questions Route
 
-@router.get("/", response_description="Get List of Questions", response_model=List[QuestionsSchema])
-async def get_questions_data():
+@router.get("/{limit}", response_description="Get List of Questions", response_model=Page[QuestionsSchema])
+async def get_questions_data(limit):
 
     try:
-        all_questions_data = await retrieve_question_contents()
+        all_questions_data = await retrieve_question_contents(limit)
         data_model = []
         if all_questions_data:
             for data in all_questions_data:
@@ -99,7 +100,7 @@ async def get_questions_data():
 
             data_model = jsonable_encoder(data_model)
 
-            return JSONResponse(status_code=status.HTTP_200_OK, content=data_model)
+            return paginate(JSONResponse(status_code=status.HTTP_200_OK, content=data_model))
     except Exception as e:
         raise HTTPException(status_code=500, detail="Error Retrieving Data from Database")
 
@@ -121,3 +122,8 @@ async def get_question_data(id):
             return JSONResponse(status_code=status.HTTP_200_OK, content=response_model)
     except Exception as e:
         raise HTTPException(status_code=500, detail="Error Retrieving Data from Database")
+
+#GET a question using other parameter types
+@router.get("/{param}", response_description="Get a Single Question data using attribute", response_model=QuestionsSchema)
+async def get_question_data_param(param):
+    pass

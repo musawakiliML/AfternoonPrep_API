@@ -90,6 +90,8 @@ def generate_tags_for_questions(questions):
         for question_data in questions:
             # print(question_data)
             question = question_data["text"]
+            options = question_data['options']
+            question = question + "\n" + "\n".join([f"{key}={value}" for key,value in options.items()])
             tags = generate_tags(question)
             # print(tags)
             question_data["difficulty_level"] = tags.get("Difficulty Level", "")

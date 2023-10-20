@@ -38,20 +38,22 @@ def check_choice_regex(line):
             'space_char': re.compile(r'^[A-D][\s][\w]'), #regex for single line with space between character A, B, C., or D and rest of words
             'colon_char': re.compile(r'^[A-D]:'), #regex for choices that come like C:, D:
             'comma_char': re.compile(r'^[A-D],'), #regex for choices that come like C, or B,
-            'typical': re.compile(r'^[A-D][\.]') #regex for each choice
+            'typical': re.compile(r'^[A-D][\.]'), #regex for each choice
+            'bracket_char': re.compile(r'^\([A-D]$\)')   #regex for choices that come like (A), (B),
             }
         
     for key, pattern in regexp.items():
         m = pattern.findall(line)
         if m: 
             return m
+        else:
+            continue
             break
 
         
 
     #return
         
-
 def detect_raw_text(s3_prefix):
     access_key = os.environ["AWS_ACCESS_KEY"]   #insert AWS Access key
     secret_access_key = os.environ["AWS_SECRET_KEY"]   #insert AWS secret access key
@@ -59,6 +61,7 @@ def detect_raw_text(s3_prefix):
     
     question_number_regex = re.compile(r'^\d{1,2}')
     choice_regex = re.compile(r'^[A-D][,\.\n\s\r]?') #regex for each choice
+    choicr_regex_bracket = re.compile(r'^\([A-D]$\)')
     choice_regex_single = re.compile(r'^[A-D]$') #regex for single line with single character A, B, C., or D
     choice_regex_space = re.compile(r'^[A-D][\s][\w]') #regex for single line with space between character A, B, C., or D and rest of words
     
@@ -106,11 +109,11 @@ def detect_raw_text(s3_prefix):
     for obj in resp['Contents']:
         s3Keys.append(obj['Key'])
     s3Keys.sort(key=natural_keys)   
-    print(s3Keys)
+    #print(s3Keys)
 
 
     num_index = 1
-    file_name = str("app/server/utils/raw_outputs/" + exam_type + "_" + exam_sub_type + "_" + exam_year + "_" + exam_subject)
+    file_name = str("AfternoonPrep_API/app/server/utils/raw_outputs/" + exam_type + "_" + exam_sub_type + "_" + exam_year + "_" + exam_subject)
     file = open(file_name, "w+")
     valid_options = 0  #Helps to skip the options that appear before the test begins
     
@@ -176,7 +179,6 @@ def detect_raw_text(s3_prefix):
             
     file.close() 
     
-    print(file_name)
     return str(file_name)   
          
             

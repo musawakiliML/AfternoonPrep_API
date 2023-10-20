@@ -140,7 +140,7 @@ def extract_data(file_path):
     return entire_list  
         
 def main():
-    file_path = "/Users/musaml/Documents/GitHub/AfternoonPrep_API/app/server/utils/raw_outputs/WASSCE_November_2011_Physics"
+    file_path = "AfternoonPrep_API/app/server/utils/raw_outputs/WASSCE_November_2011_Physics"
     extract_data(file_path)
     
 
